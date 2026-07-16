@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Basket - Bean Boutique</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <a href="index.html" class="logo">Bean<span class="logo-site">Boutique</span></a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="cart.html" class="active">Shopping Cart</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            <h1>Your Selected Craft Items</h1>
+            <p class="section-subtitle">Review your items before proceeding to our secure checkout terminal.</p>
+
+            <div class="cart-item-row">
+                <img src="images/seed.jpg" alt="Volcanica Bag Selection" class="item-img">
+
+                <div class="item-details">
+                    <h2 class="item-title">Volcanica Highland Selection</h2>
+                    <p class="item-meta">Profile: Whole Bean / 250g Roast Bag</p>
+                    <a href="#" class="btn-remove">Remove Item</a>
+                </div>
+
+                <div class="item-qty-wrapper">
+                    <label for="quantity" class="qty-label">Qty:</label>
+                    <input type="number" id="quantity" value="1" min="1" max="10" class="qty-input">
+                </div>
+
+                <div class="item-price-wrapper">
+                    <span class="item-price">18,500 Ks</span>
+                </div>
+            </div>
+
+            <div class="cart-summary-block">
+                <div class="summary-line">
+                    <span class="summary-label"> Subtotal:</span>
+                    <span class="summary-value">18,500 Ks</span>
+                </div>
+                <div class="summary-line">
+                    <span class="summary-label">Delivery Fee:</span>
+                    <span class="summary-value">4,000 Ks</span>
+                </div>
+                <div class="summary-line total-line">
+                    <span class="total-label">Total Order Price:</span>
+                    <span class="total-value">22,000 Ks</span>
+                </div>
+            </div>
+
+            <div class="cart-actions-footer">
+                <a href="coffee.html" class="btn-continue">&larr; Continue Shopping</a>
+                <a href="#" class="btn-primary btn-checkout">Proceed to Checkout Terminal</a>
+            </div>
+        </div>
+    </main>
+
+                <!-- Promo Modal (Kept only one clean copy) -->
+    <div class="modal" id="promoModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>Mingalaba! ☕</h2>
+            <p>Sign up with your email to receive 15% discount on your first purchase!</p><br>
+            <div class="email-claim">
+                <input type="email" placeholder="Enter your email" class="email-input">
+            </div><br>
+            <button class="btn-primary" id="claimBtn">Claim Discount</button>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="maybeLater">Maybe Later</button>
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Group 1: Links -->
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                </ul>
+            </div>
+
+            <!-- Group 2: Contact -->
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Phone: +95 9 954 480 810</p>
+                <p>Email: hello@beanboutique.com</p>
+                <p>
+                    <a href="https://maps.google.com/?cid=8774972356191863547" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> 4th Street, 37A 38th St, Mandalay
+                    </a>
+                </p>
+            </div>
+
+            <!-- Group 3: Socials -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Copyright sits alone at the bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+        <!-- Floating Offer Button (Kept only one clean copy) -->
+    <button id="floatingOfferBtn" class="floating-offer-btn">
+        <i class="fas fa-gift"></i> 15% Off
+    </button>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartContainer = document.querySelector(".cart-items-container") || document.querySelector(".content-card");
+
+            if (!cartContainer) return;
+
+            const staticRow = document.querySelector(".cart-item-row");
+            if (staticRow) staticRow.remove();
+
+            const existingContainer = document.querySelector(".dynamic-cart-container");
+            if (existingContainer) existingContainer.remove();
+
+            const dynamicWrapper = document.createElement("div");
+            dynamicWrapper.classList.add("dynamic-cart-container");
+
+            if (cart.length === 0) {
+                dynamicWrapper.innerHTML = "<p>Your cart is empty.</p>";
+                cartContainer.insertBefore(dynamicWrapper, document.querySelector(".cart-summary-block"));
+                updateCartTotals(cart);
+                return;
+            }
+
+            cart.forEach((item, index) => {
+                const itemRow = document.createElement("div");
+                itemRow.classList.add("cart-item-row");
+
+                itemRow.innerHTML = `
+                <img src="${item.imgSrc}" alt="${item.title}" class="item-img">
+
+                <div class="item-details">
+                    <h4 class="item-title">${item.title}</h4>
+                    <p class="item-meta">Profile: Premium Selection</p>
+                    <a href="javascript:void(0)" class="btn-remove remove-btn" data-index="${index}">Remove Item</a>
+                </div>
+
+                <div class="item-qty-wrapper">
+                    <label class="qty-label">Qty:</label>
+                    <input type="number" value="${item.quantity}" min="1" data-index="${index}" class="qty-input quantity-input">
+                </div>
+
+                <div class="item-price-wrapper">
+                    <span class="item-price">${(item.price * item.quantity).toLocaleString()} Ks</span>
+                </div>
+            `;
+                dynamicWrapper.appendChild(itemRow);
+            });
+
+            cartContainer.insertBefore(dynamicWrapper, document.querySelector(".cart-summary-block"));
+
+            updateCartTotals(cart);
+            setupCartListeners(cart);
+        });
+
+        function updateCartTotals(cart) {
+            let subtotal = 0;
+            cart.forEach(item => {
+                subtotal += item.price * item.quantity;
+            });
+
+            let shipping = subtotal > 0 ? 4000 : 0;
+            let total = subtotal + shipping;
+
+            const subtotalEl = document.querySelector(".summary-line:nth-child(1) .summary-value");
+            const totalEl = document.querySelector(".total-line .total-value");
+
+            if (subtotalEl) subtotalEl.innerText = subtotal.toLocaleString() + " Ks";
+            if (totalEl) totalEl.innerText = total.toLocaleString() + " Ks";
+        }
+
+        function setupCartListeners(cart) {
+            document.querySelectorAll(".quantity-input").forEach(input => {
+                input.addEventListener("change", function (e) {
+                    const index = e.target.getAttribute("data-index");
+                    const newQty = parseInt(e.target.value);
+                    if (newQty > 0) {
+                        cart[index].quantity = newQty;
+                        localStorage.setItem("cart", JSON.stringify(cart));
+                        updateCartTotals(cart);
+                        e.target.closest(".cart-item-row").querySelector(".item-price").innerText = (cart[index].price * newQty).toLocaleString() + " Ks";
+                    }
+                });
+            });
+
+            document.querySelectorAll(".remove-btn").forEach(btn => {
+                btn.addEventListener("click", function (e) {
+                    const index = e.target.getAttribute("data-index");
+                    cart.splice(index, 1);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    window.location.reload();
+                });
+            });
+        }
+
+        // --- 1. NAVIGATION MENU LOGIC ---
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Clear the frozen cache when using the browser "Back" button
+        window.addEventListener('pageshow', () => {
+            if (navLinks && menuToggle) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // --- 2. FLOATING PROMO MODAL LOGIC ---
+        const promoModal = document.getElementById('promoModal');
+        const floatingOfferBtn = document.getElementById('floatingOfferBtn');
+        const closeModal = document.getElementById('closeModal');
+        const maybeLater = document.getElementById('maybeLater');
+        const claimBtn = document.getElementById('claimBtn');
+
+        function showPromo() {
+            if (promoModal) {
+                promoModal.style.display = 'flex';
+                setTimeout(() => { 
+                    promoModal.style.opacity = '1'; 
+                }, 10);
+            }
+        }
+
+        function hidePromo() {
+            if (promoModal) {
+                promoModal.style.opacity = '0';
+                setTimeout(() => { 
+                    promoModal.style.display = 'none'; 
+                }, 300);
+            }
+        }
+
+        // Click floating button to open
+        if (floatingOfferBtn) {
+            floatingOfferBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showPromo();
+            });
+        }
+
+        // Close button handlers
+        if (closeModal) closeModal.addEventListener('click', hidePromo);
+        if (maybeLater) maybeLater.addEventListener('click', hidePromo);
+        
+        if (claimBtn) {
+            claimBtn.addEventListener('click', () => {
+                alert("Discount claimed! Present code BURMABREW at checkout! 🥐");
+                hidePromo();
+            });
+        }
+
+        // Close if clicking outside the white container
+        window.addEventListener('click', (event) => {
+            if (event.target === promoModal) {
+                hidePromo();
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

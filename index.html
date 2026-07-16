@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <a href="index.html" class="logo">Bean<span class="logo-site">Boutique</span></a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FIXED: Added the slideshow-container wrapper around your slides and controls -->
+        <div class="slide fade">
+            <img src="images/shop.jpg" alt="Bean Boutique Shop Counter">
+            <div class="slide-content">
+                <h1>Join the Bean Boutique Family</h1>
+                <p>Where every cup tells a story of passion, quality, and community.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/seed.jpg" alt="Fresh Coffee Beans Sourcing">
+            <div class="slide-content">
+                <h2>Premium Single Origins</h2>
+                <p>Hand-selected, ethically sourced beans roasted daily in small batches.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/group.jpg" alt="Coffee Brewing Immersive Workshop">
+            <div class="slide-content">
+                <h2>Immersive Tasting Hub</h2>
+                <p>Join our weekend sensory tasting sessions and master home brewing.</p>
+                <a href="event.html" class="add-btn btn">Explore our event</a>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/bb.jpg" alt="Brewing Equipment and Accessories">
+            <div class="slide-content">
+                <h2>Brewing Equipment and Accessories</h2>
+                <p>Explore our curated collection of professional-grade brewing tools and accessories.</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/milk7.jpg" alt="Special Offers and Subscription Plans">
+            <div class="slide-content">
+                <h2>Special Offers & Subscriptions</h2>
+                <p>Sign up for our monthly subscription and enjoy exclusive discounts on your favorite blends.</p>
+                <a href=""></a>
+            </div>
+        </div>
+
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+   
+
+    <main class="container">
+        <section class="hero-intro-section">
+            <div class="content-card content-card-split">
+                <div class="about-image-wrapper">
+                    <img src="images/s.jpg" alt="Bean Boutique Counter" class="responsive-img">
+                </div>
+                <div class="about-text-wrapper">
+                    <h2>Crafted For True Coffee Enthusiasts</h2>
+                    <p>Welcome to our Mandalay roasting lab. We focus on small-batch processing to unlock distinct
+                        regional flavors, bringing premium ethically-sourced beans straight to your cup.</p>
+                    <a href="coffee.html" class="shop">Explore Our Coffee</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="best-sellers-section">
+            <h2>Our Best Sellers</h2>
+            <p class="section-subtitle">Local favorites precision-roasted and loved by our community.</p>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="best-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/pink.webp" alt="House Espresso Blend" class="product-img">
+                    </div>
+                    <h3>Vanilla Flavour Blend</h3>
+                    <p class="product-description">Smooth, rich profile with distinct notes of deep sweetness.</p>
+                    <span class="product-price">12,500 MMK</span><br>
+                    <a href="coffee.html" class="btn-product">Add to Cart</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="best-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/2.jpg" alt="Premium Pour-Over Pack" class="product-img">
+                    </div>
+                    <h3>Premium Sourced Single Origin</h3>
+                    <p class="product-description">Bright acidity with a wonderfully clean, crisp floral finish.</p>
+                    <span class="product-price">14,000 MMK</span><br>
+                    <a href="coffee.html" class="btn-product">Add to Cart</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="best-card">
+                    <div class="product-image-wrapper">
+                        <img src="images/44.webp" alt="Boutique Brewing Pot" class="product-img">
+                    </div>
+                    <h3>Boutique Ceramic Dripper</h3>
+                    <p class="product-description">Premium gear chosen to elevate your home extraction quality.</p>
+                    <span class="product-price">28,000 MMK</span><br>
+                    <a href="brewing.html" class="btn-product">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>From Farm to Cup</h2>
+            <p class="section-subtitle">Discover how our coffee beans make the journey to your morning mug.</p>
+            <div class="process-grid">
+                <div class="process-step-card">
+                    <img src="images/red.jpg" alt="Sourcing" class="process-img">
+                    <div class="process-badge">1</div>
+                    <h3>Sourcing</h3>
+                    <p>We hand-select the finest red coffee cherries directly from high-altitude highland farms.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <img src="images/2people.jpg" alt="Washing & Drying" class="process-img">
+                    <div class="process-badge">2</div>
+                    <h3>Washing & Drying</h3>
+                    <p>The beans are carefully washed and sun-dried on raised beds to bring out their natural sweetness.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <img src="images/seed4.jpg" alt="Precision Roasting" class="process-img">
+                    <div class="process-badge">3</div>
+                    <h3>Precision Roasting</h3>
+                    <p>Every bean is roasted in small batches in our shop to highlight its unique regional flavor profile.</p>
+                </div>
+
+                <div class="process-step-card">
+                    <img src="images/machine.jpg" alt="Expert Brewing" class="process-img">
+                    <div class="process-badge">4</div>
+                    <h3>Expert Brewing</h3>
+                    <p>Ground fresh and brewed meticulously by our baristas to ensure perfect extraction.</p>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <section>
+            <div class="content-card content-card-split">
+                <div class="about-image-wrapper">
+                    <img src="images/roaster.jpg" alt="Our Roasting Process" class="responsive-img">
+                </div>
+                <div class="about-text-wrapper">
+                    <h2>Roasted Locally with Care</h2>
+                    <p>We travel the world to find the best coffee farms. Every single bean is roasted by hand in
+                        small batches right here in our shop to make sure you get the freshest flavor possible in your cup
+                        every morning.</p>
+                </div>
+            </div>
+            <h2>BeanBoutique Moments</h2>
+            <p class="section-subtitle">Follow our daily brewing craft journeys on social media.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/light.jpg" alt="Boutique Cafe Interior"></div>
+                <div class="gallery-item"><img src="images/6.jpg" alt="Serving Bakery Goods"></div>
+                <div class="gallery-item"><img src="images/milk.jpg" alt="Pouring Latte Art"></div>
+                <div class="gallery-item"><img src="images/8.jpg" alt="Barista at work"></div>
+            </div><br>
+        </section>
+    </main>
+
+    <!-- Promo Modal (Kept only one clean copy) -->
+    <div class="modal" id="promoModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>Mingalaba! ☕</h2>
+            <p>Sign up with your email to receive 15% discount on your first purchase!</p><br>
+            <div class="email-claim">
+                <input type="email" placeholder="Enter your email" class="email-input">
+            </div><br>
+            <button class="btn-primary" id="claimBtn">Claim Discount</button>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="maybeLater">Maybe Later</button>
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Phone: +95 9 954 480 810</p>
+                <p>Email: hello@beanboutique.com</p>
+                <p>
+                    <a href="https://maps.google.com/?cid=8774972356191863547" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> 4th Street, 37A 38th St, Mandalay
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Offer Button (Kept only one clean copy) -->
+    <button id="floatingOfferBtn" class="floating-offer-btn">
+        <i class="fas fa-gift"></i> 15% Off
+    </button>
+
+    <script>
+        // Global variables and slide engine setup
+        let slideIndex = 1;
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (!slides.length) return;
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        window.moveSlide = function (n) {
+            showSlides(slideIndex += n);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('promoModal');
+            const closeBtn = document.getElementById('closeModal');
+            const claimBtn = document.getElementById('claimBtn');
+            const maybeLaterBtn = document.getElementById('maybeLater');
+            const floatingOfferBtn = document.getElementById('floatingOfferBtn'); 
+            const productButtons = document.querySelectorAll('.btn-product');
+
+            // FIXED: Initializing slideshow safely here inside DOMContentLoaded
+            showSlides(slideIndex);
+            setInterval(() => { moveSlide(1); }, 5000);
+
+            // --- PRODUCT ADD TO CART LOGIC ---
+            productButtons.forEach(button => {
+                if (button.textContent.trim() === "Add to Cart") {
+                    button.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const productCard = button.closest('.best-card');
+                        const productName = productCard.querySelector('h3').textContent;
+
+                        alert(` 🛒 ${productName} has been saved to your shopping cart!`);
+
+                        const originalText = button.textContent;
+                        button.textContent = "✓ Added!";
+                        button.style.backgroundColor = "#4E3629"; 
+
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.style.backgroundColor = ""; 
+                        }, 2000);
+                    });
+                }
+            });
+
+            // --- MODAL FUNCTIONS ---
+            function showModal() {
+                if (modal) {
+                    modal.style.display = 'flex';
+                    setTimeout(() => {
+                        modal.style.opacity = '1';
+                    }, 10);
+                }
+            }
+
+            function hideModal() {
+                if (modal) {
+                    sessionStorage.setItem('modalDismissed', 'true');
+                    modal.style.opacity = '0';
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 300);
+                }
+            }
+
+            // --- AUTOMATIC POP-UP LOGIC ---
+            if (!sessionStorage.getItem('modalDismissed')) {
+                setTimeout(showModal, 2000);
+            }
+
+            // --- MODAL EVENT LISTENERS ---
+            if (floatingOfferBtn) {
+                floatingOfferBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    showModal();
+                });
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    hideModal();
+                });
+            }
+
+            if (claimBtn) {
+                claimBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    alert("Croissant token claimed! Present this code at checkout: BURMABREW 🥐");
+                    hideModal();
+                });
+            }
+
+            if (maybeLaterBtn) {
+                maybeLaterBtn.addEventListener('click', () => {
+                    hideModal();
+                });
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        hideModal();
+                    }
+                });
+            }
+
+            // --- NAVIGATION MENU LOGIC ---
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                });
+
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    });
+                });
+            }
+        });
+
+        // Clear the frozen cache when using the browser "Back" button
+        window.addEventListener('pageshow', () => {
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menuToggle');
+            if (navLinks && menuToggle) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

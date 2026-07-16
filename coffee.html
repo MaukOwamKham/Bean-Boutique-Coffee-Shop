@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection - Bean Boutique</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <a href="index.html" class="logo">Bean<span class="logo-site">Boutique</span></a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html" class="active">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="coffee-card">
+        <h1>Our Premium Coffee Blends</h1>
+        <p class="section-subtitle">Explore our hand-picked, ethically sourced single-origin coffee beans roasted to
+            absolute perfection.</p>
+
+        <div class="search-filter-panel">
+            <div class="search-box">
+                <input type="text" id="coffeeSearch" class="search-input"
+                    placeholder="Search blends (e.g., Robusta, Latte)...">
+            </div>
+
+            <div class="category-slider-wrapper">
+                <div class="category-chips-track">
+                    <button class="chip active" data-filter="all">All Coffee</button>
+                    <button class="chip" data-filter="single-origin">Single-Origin Whole Beans</button>
+                    <button class="chip" data-filter="blends">Premium House Blends</button>
+                    <button class="chip" data-filter="instant">Instant & Sachets</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. SINGLE-ORIGIN SECTION -->
+        <div class="coffee-group-section" id="single-origin-group" data-group-type="single-origin">
+            <h2 class="group-title">Single-Origin Whole Beans</h2>
+            <div class="display-grid">
+
+                <div class="product-card" data-item-name="Ywangan Arabica" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/2.jpg" class="product-image" alt="Ywangan Arabica">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Single-Origin</span>
+                        <h3 class="product-title">Ywangan Arabica</h3>
+                        <p><strong>Notes:</strong> Citrus brightness, floral aroma, and honey
+                            sweetness.<br><strong>Best Brewed With:</strong> V60 Pour-over.</p>
+                        <p class="Price">7,500 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Maymyo Fresh Highland" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/images.jpeg" class="product-image" alt="Maymyo Fresh Highland">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Highland Single-Origin</span>
+                        <h3 class="product-title">Maymyo Fresh Highland</h3>
+                        <p><strong>Notes:</strong> Tropical fruits, macadamia nut, and complex
+                            sweetness.<br><strong>Best Brewed With:</strong> Drip filter.</p>
+                        <p class="Price">12,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Laos Bolaven Plateau Typica" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/ll.jpg" class="product-image" alt="Laos Bolaven Plateau Typica">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Southeast Asian Origin</span>
+                        <h3 class="product-title">Laos Bolaven Typica</h3>
+                        <p><strong>Notes:</strong> Herbal tea notes, dark honey smoothness, and light spice
+                            accents.<br><strong>Best Brewed With:</strong> Syphon or Pour-over.</p>
+                        <p class="Price">11,500 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Myanmar Single-Origin" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/i.jpg" class="product-image" alt="Myanmar Single-Origin">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Southeast Asian Origin</span>
+                        <h3 class="product-title">Myanmar Single-Origin</h3>
+                        <p><strong>Notes:</strong> Toasted almonds, rich creamy caramel syrup, and low
+                            acidity.<br><strong>Best Brewed With:</strong> French Press or Espresso.</p>
+                        <p class="Price">15,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-item-name="Myanmar Mogok Highland Peaberry"
+                    data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/j.webp" class="product-image" alt="Myanmar Mogok Highland Peaberry">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Exotic Single-Origin</span>
+                        <h3 class="product-title">Myanmar Mogok Highland Peaberry</h3>
+                        <p><strong>Notes:</strong> Rustic earthy sweetness, dark baker's cocoa syrup, and heavy
+                            body.<br><strong>Best Brewed With:</strong> French Press.</p>
+                        <p class="Price">14,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Artisan Origin Coffee Beans" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/o.jpg" class="product-image" alt="Artisan Origin Coffee Beans">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Specialty Whole Beans</span>
+                        <h3 class="product-title">Artisan Origin Coffee Beans</h3>
+                        <p><strong>Notes:</strong> Citrus brightness, floral undertones, and a clean honey
+                            finish.<br><strong>Best Brewed With:</strong> Pour-over (V60/Chemex).</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Yunnan Highland Origin" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/china.webp" class="product-image" alt="Yunnan Highland Origin">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Regional Single-Origin</span>
+                        <h3 class="product-title">Yunnan Highland Origin</h3>
+                        <p><strong>Notes:</strong> Sweet black tea profile, juicy stewed plum.
+                            body.<br><strong>Best Brewed With:</strong> Drip Coffee Maker or V60.</p>
+                        <p class="Price">16,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Mogok Highland Peaberry" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/images-5.jpeg" class="product-image" alt="Mogok Highland Peaberry">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Rare Peaberry</span>
+                        <h3 class="product-title">Mogok Highland Peaberry</h3>
+                        <p><strong>Notes:</strong> Vibrant black currant, dark molasses, and a rich, crisp cider
+                            undertone.<br><strong>Best Brewed With:</strong> Chemex or V60.</p>
+                        <p class="Price">19,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Ethiopian Yirgacheffe" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/images-4.jpeg" class="product-image" alt="Ethiopian Yirgacheffe">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">African Origin</span>
+                        <h3 class="product-title">Ethiopian Yirgacheffe</h3>
+                        <p><strong>Notes:</strong> Fragrant jasmine notes, sweet lemongrass, and black tea.
+                            <br><strong>Best Brewed With:</strong> V60 Pour-over.
+                        </p>
+                        <p class="Price">21,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-item-name="Sumatran Mandheling" data-category="single-origin">
+                    <div class="img-container">
+                        <img src="images/images-3.jpeg" class="product-image" alt="Sumatran Mandheling">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Exotic Roast</span>
+                        <h3 class="product-title">Sumatran Mandheling</h3>
+                        <p><strong>Notes:</strong> Earthy cedarwood, rich herbal spice, and heavy dark cocoa
+                            accents.<br><strong>Best Brewed With:</strong> French Press.</p>
+                        <p class="Price">20,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2. PREMIUM BLENDS SECTION -->
+        <div class="coffee-group-section" id="premium-blends-group" data-group-type="blends">
+            <h3 class="group-title">Premium House Blends</h3>
+            <div class="display-grid">
+
+
+
+                <div class="product-card" data-item-name="England Kent Breakfast Blend " data-category="blends">
+                    <div class="img-container">
+                        <img src="images/e.jpg" class="product-image" alt="England Kent Breakfast Blend">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Specialty Micro-Lot</span>
+                        <h3 class="product-title">England Kent Breakfast Blend</h3>
+                        <p><strong>Notes:</strong> Red raspberry sweetness, pure cane sugar finish, and a buttery
+                            body.<br><strong>Best Brewed With:</strong> Chemex.</p>
+                        <p class="Price">16,500 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Ottoman Spice Blend" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/ooo.webp" class="product-image" alt="Turkish Sand Blend">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Specialty Blend</span>
+                        <h3 class="product-title">Ottoman Spice Blend </h3>
+                        <p><strong>Notes:</strong> Aromatic spices, warm cinnamon, and a hint of
+                            cardamom.<br><strong>Best Brewed With:</strong> Turkish coffee pot or French press.</p>
+                        <p class="Price">18,000 Ks</p>
+                        <button class="btn-primary btn add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Midnight Espresso Blend" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/night.webp" class="product-image" alt="Midnight Espresso Blend">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Dark Roast Blend</span>
+                        <h3 class="product-title">Midnight Espresso Blend</h3>
+                        <p><strong>Notes:</strong> A punchy blend with heavy notes of dark chocolate.
+                            <br><strong>Best Brewed With:</strong> Espresso machine or Moka pot.
+                        </p>
+                        <p class="Price">25,000 Ks</p>
+                        <button class="btn-primary btn add-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Starbucks fall blend" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/d.avif" class="product-image" alt="Starbucks fall blend">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">House Selection</span>
+                        <h3 class="product-title">Starbucks fall blend</h3>
+                        <p><strong>Notes:</strong> Crisp green apple crispness, jasmine tea undertones, and a vibrant
+                            morning finish.<br><strong>Best Brewed With:</strong> Pour-over (V60).</p>
+                        <p class="Price">16,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Breakfast Boutique Blend" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/a.webp" class="product-image" alt="Breakfast Boutique Blend">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">House Selection</span>
+                        <h3 class="product-title">Breakfast Boutique Blend</h3>
+                        <p><strong>Notes:</strong> Smooth comforting milk chocolate, roasted savory oats, and perfectly
+                            balanced body.<br><strong>Best Brewed With:</strong> Drip Coffee Maker or French Press.</p>
+                        <p class="Price">16,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Chamberlain Flavour Sachet" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/pink.webp" class="product-image" alt="Chamberlain Flavour Sachet">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Premium Sachet</span>
+                        <h3 class="product-title">Chamberlain Flavour Sachet</h3>
+                        <p><strong>Notes:</strong> Creamy vanilla bean flavor, toasted marshmallow undertones, and a
+                            velvety finish.<br><strong>Best Brewed With:</strong> Stir with hot water or milk.</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Starbucks Premium Iced Coffee" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/ice.avif" class="product-image" alt="Starbucks Premium Instant Iced Coffee">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Starbucks Instant</span>
+                        <h3 class="product-title">Starbucks Premium Iced Blend</h3>
+                        <p><strong>Notes:</strong> Crisp citrus notes, and a smoothrefreshing finish.<br><strong>Best
+                                Brewed With:</strong> Add cold water and ice cubes.</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-item-name="Boutique Velvet Roast" data-category="blends">
+                    <div class="img-container">
+                        <img src="images/v.webp" class="product-image" alt="Boutique Velvet Roast">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Signature Dark Roast</span>
+                        <h3 class="product-title">Boutique Velvet Roast</h3>
+                        <p><strong>Notes:</strong> Intense smoky caramel, dark walnut cream, and a rich
+                            profile.<br><strong>Best Brewed With:</strong> Moka Pot.</p>
+                        <p class="Price">17,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 3. INSTANT & SACHETS SECTION -->
+        <div class="coffee-group-section" id="instant-coffee-group" data-group-type="instant">
+            <h3 class="group-title">Instant Coffee & Premium Sachets</h3>
+            <div class="display-grid">
+
+                <div class="product-card" data-item-name="Local 3-in-1 Instant Coffee" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/5.jpg" class="product-image" alt="Local 3-in-1 Instant Coffee">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Instant Coffee</span>
+                        <h3 class="product-title">Local 3-in-1 Instant Coffee</h3>
+                        <p><strong>Notes:</strong> Rich creamer, milky sweetness, and balanced coffee
+                            punch.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">13,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-item-name="Premier 3 in 1 instant coffee" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/n.jpeg" class="product-image" alt="Premier 3 in 1 instant coffee">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Instant Coffee</span>
+                        <h3 class="product-title">Premier 3 in 1 instant coffee</h3>
+                        <p><strong>Notes:</strong> Rich creamer, milky sweetness, and balanced coffee
+                            punch.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">13,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Café Blend Cappuccino" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/candy.jpg" class="product-image" alt="Café Blend Cappuccino">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Café Blend</span>
+                        <h3 class="product-title">Café Blend Cappuccino</h3>
+                        <p><strong>Notes:</strong> Creamy, sweet milk chocolate, and roasted coffee
+                            aroma.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="product-card" data-item-name="999 Premium 3-in-1 Instant Mix" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/99.jpeg" class="product-image" alt="999 Premium 3-in-1 Instant Mix">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Instant Sachet</span>
+                        <h3 class="product-title">999 Premium 3-in-1 Mix</h3>
+                        <p><strong>Notes:</strong> Bold local coffee roast characteristics, rich dairy creamer, and an
+                            ultra-smooth finish.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">11,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Moccona Classic Freeze-Dried Coffee" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/mo.jpeg" class="product-image" alt="Moccona Classic Freeze-Dried Coffee">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Moccona Jar</span>
+                        <h3 class="product-title">Moccona Classic Dried</h3>
+                        <p><strong>Notes:</strong> Rich, full-bodied flavor with an exceptionally smooth classic
+                            finish.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">23,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Nescafé Classic Instant Coffee Sachets"
+                    data-category="instant">
+                    <div class="img-container">
+                        <img src="images/mix.jpg" class="product-image" alt="Nescafé Classic Instant Coffee Sachets">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Nescafé Classic</span>
+                        <h3 class="product-title">Nescafé Instant Coffee</h3>
+                        <p><strong>Notes:</strong> Robust, dark roasted coffee with a distinct bittersweet
+                            edge.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Boutique Specialty Pack" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/p.webp" class="product-image" alt="Boutique Specialty Drip Pack">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Premium Sachet</span>
+                        <h3 class="product-title">Boutique Specialty Pack</h3>
+                        <p><strong>Notes:</strong> Fresh origin convenience with brown sugar
+                            sweetness.<br><strong>Best Brewed With:</strong>Hot water over pack.</p>
+                        <p class="Price">15,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-item-name="Nescafé Gold Rich & Smooth" data-category="instant">
+                    <div class="img-container">
+                        <img src="images/gold.webp" class="product-image" alt="Nescafé Gold Rich & Smooth">
+                    </div>
+                    <div class="card-info">
+                        <span class="tag">Nescafé Gold</span>
+                        <h3 class="product-title">Nescafé Gold Rich and Smooth</h3>
+                        <p><strong>Notes:</strong> Golden-roasted notes, subtle caramel, and a smooth, mellow
+                            body.<br><strong>Best Brewed With:</strong> Just add hot water.</p>
+                        <p class="Price">10,000 Ks</p>
+                        <button class="add-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Promo Modal (Kept only one clean copy) -->
+    <div class="modal" id="promoModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>Mingalaba! ☕</h2>
+            <p>Sign up with your email to receive 15% discount on your first purchase!</p><br>
+            <div class="email-claim">
+                <input type="email" placeholder="Enter your email" class="email-input">
+            </div><br>
+            <button class="btn-primary" id="claimBtn">Claim Discount</button>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="maybeLater">Maybe Later</button>
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Group 1: Links -->
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                </ul>
+            </div>
+
+            <!-- Group 2: Contact -->
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Phone: +95 9 954 480 810</p>
+                <p>Email: hello@beanboutique.com</p>
+                <p>
+                    <a href="https://maps.google.com/?cid=8774972356191863547" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> 4th Street, 37A 38th St, Mandalay
+                    </a>
+                </p>
+            </div>
+
+            <!-- Group 3: Socials -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright sits alone at the bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Offer Button (Kept only one clean copy) -->
+    <button id="floatingOfferBtn" class="floating-offer-btn">
+        <i class="fas fa-gift"></i> 15% Off
+    </button>
+
+    <!-- SweetAlert2 JavaScript Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Include Typed.js Plugin -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- DYNAMIC FILTER SCRIPT -->
+    <script>
+        const searchInput = document.getElementById('coffeeSearch');
+        const chips = document.querySelectorAll('.chip');
+        const groupSections = document.querySelectorAll('.coffee-group-section');
+
+        searchInput.addEventListener('input', filterProducts);
+
+        chips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                chips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+                filterProducts();
+            });
+        });
+
+        function filterProducts() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeChip = document.querySelector('.chip.active').getAttribute('data-filter');
+
+            groupSections.forEach(section => {
+                const groupType = section.getAttribute('data-group-type');
+                const products = section.querySelectorAll('.product-card');
+                let hasVisibleProduct = false;
+
+                products.forEach(product => {
+                    const itemName = product.getAttribute('data-item-name').toLowerCase();
+                    const itemCategory = product.getAttribute('data-category');
+
+                    const matchesSearch = itemName.includes(searchTerm);
+                    const matchesChip = (activeChip === 'all' || itemCategory === activeChip);
+
+                    if (matchesSearch && matchesChip) {
+                        product.style.display = '';
+                        hasVisibleProduct = true;
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+
+                // Toggles entire group section block display cleanly
+                if (hasVisibleProduct) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        // 1. Regular click to open/close the menu
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // 2. Close the menu when any link inside it is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // 3. THE FIX: Clear the frozen cache when using the browser "Back" button
+        window.addEventListener('pageshow', () => {
+            if (navLinks && menuToggle) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+        // Add this after your existing filter script in coffee.html and brewing.html
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".add-btn").forEach(button => {
+                button.addEventListener("click", (e) => {
+                    const card = e.target.closest(".product-card");
+
+                    // Extract item details
+                    const item = {
+                        title: card.querySelector(".product-title").innerText,
+                        // Clean the price string to get a number
+                        price: parseFloat(card.querySelector(".Price").innerText.replace(/[^0-9.-]+/g, "")),
+                        imgSrc: card.querySelector(".product-image").src,
+                        quantity: 1
+                    };
+
+                    // Save to localStorage
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    cart.push(item);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+
+                    alert(item.title + " added to cart!");
+                });
+            });
+        });
+        // Initialize Typed.js on your search bar placeholder
+        const typed = new Typed('#coffeeSearch', {
+            strings: ['Search Robusta...', 'Search Espresso...', 'Search Latte...', 'Search Whole Beans...'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            attr: 'placeholder', // This targets the placeholder attribute
+            bindInputFocusEvents: true,
+            loop: true
+        });
+        // Grab all the elements we need (Corrected to match your HTML IDs!)
+        const floatingOfferBtn = document.getElementById('floatingOfferBtn');
+        const promoModal = document.getElementById('promoModal');
+        const closeModal = document.getElementById('closeModal');
+        const maybeLater = document.getElementById('maybeLater');
+
+        // 1. When user clicks the floating button, SHOW the popup
+        floatingOfferBtn.addEventListener('click', () => {
+            promoModal.classList.add('active');
+        });
+
+        // Helper function to HIDE the popup
+        function hidePopup() {
+            promoModal.classList.remove('active');
+        }
+
+        // 2. Hide popup when clicking the "X"
+        closeModal.addEventListener('click', hidePopup);
+
+        // 3. Hide popup when clicking "Maybe Later"
+        maybeLater.addEventListener('click', hidePopup);
+
+        // 4. Hide popup if they click outside the white box
+        window.addEventListener('click', (event) => {
+            if (event.target === promoModal) {
+                hidePopup();
+            }
+        });
+    </script>
+</body>
+
+</html>

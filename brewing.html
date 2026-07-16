@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equipment - Bean Boutique</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <a href="index.html" class="logo">Bean<span class="logo-site">Boutique</span></a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html" class="active">Brewing Equipment</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="con-card">
+        <h1>Artisanal Extraction Gear</h1>
+        <h2 class="mysubtitle">
+            Find professional tools from French presses to espresso setups with our specialized signature usage
+            tips.
+        </h2>
+
+        <div class="search-filter-panel">
+            <div class="search-box">
+                <input type="text" id="brewingSearch" class="search-input" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="display-grid">
+
+
+            <!-- MANUAL BREW -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/press.jpg" class="product-image" alt="Classic Glass French Press">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Manual Brew</span>
+                    <h3 class="product-title">Classic French Press</h3>
+                    <p class="product-desc">Creates a heavy-bodied, full texture cup by preserving natural specialty
+                        coffee oils.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Steep for exactly 4 minutes using a coarse sea-salt grind profile.
+                    </p>
+                    <p class="Price">45,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- ESPRESSO SYSTEM -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/machine.jpg" class="product-image" alt="Pro Espresso System">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Precision Craft</span>
+                    <h3 class="product-title">Boutique Espresso System</h3>
+                    <p class="product-desc">Commercial grade pressure stability designed for premium home
+                        setups.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Aim for a stable 25–30 second extraction time for double shots.
+                    </p>
+                    <p class="Price">380,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- GRINDERS SECTION (DISSOLVED DUPLICATES) -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/drop.jpg" class="product-image" alt="Electric Burr Coffee Grinder">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Grind Control</span>
+                    <h3 class="product-title">Electric Conical Grinder</h3>
+                    <p class="product-desc">Stepless adjustment dials to ensure particle size uniformity across
+                        all settings.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Clean out the chute weekly to prevent oil accumulation from
+                        corrupting.
+                    </p>
+                    <p class="Price">120,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- IMMERSION SECTIONS (DISSOLVED DUPLICATES) -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/0.webp" class="product-image" alt="AeroPress Coffee Maker">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Immersion</span>
+                    <h3 class="product-title">AeroPress Original</h3>
+                    <p class="product-desc">Rapid, full-immersion structural brewing delivering low acidity
+                        cup results.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Try the "inverted method" for a stronger, more full-bodied 
+                        concentration.
+                    </p>
+                    <p class="Price">85,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/8.webp" class="product-image" alt="Precision Hand Grinder">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Portable Grind</span>
+                    <h3 class="product-title">Precision Manual Grinder</h3>
+                    <p class="product-desc">Dual-bearing stainless steel pentagonal burrs providing smooth manual
+                        grinding on the go.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Always grind fresh right before you start pouring hot water to lock
+                        in aromatics.
+                    </p>
+                    <p class="Price">85,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/ee.webp" class="product-image" alt="Automatic Milk Frother">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Milk Craft</span>
+                    <h3 class="product-title">Automatic Foam Steamer</h3>
+                    <p class="product-desc">Creates velvety induction-heated microfoam perfectly texturized for flat
+                        whites and lattes.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Use ice-cold dairy or alternative milk bases for the tightest froth
+                        structures.
+                    </p>
+                    <p class="Price">65,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- POUR OVER SECTIONS (DISSOLVED DUPLICATES) -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/44.webp" class="product-image" alt="Ceramic V60 Coffee Dripper Ceramic White">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Pour Over</span>
+                    <h3 class="product-title">Ceramic V60 Coffee Dripper</h3>
+                    <p class="product-desc">Features signature interior spiral ribs for clean, crisp, and highly
+                        expressive flavor extractions.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Wet the paper filter first to completely wash away paper dust before
+                        brewing.
+                    </p>
+                    <p class="Price">32,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/777.webp" class="product-image" alt="Wave Stainless Dripper">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Pour Over</span>
+                    <h3 class="product-title">Wave Stainless Steel Dripper</h3>
+                    <p class="product-desc">Flat-bottom geometry featuring three extraction holes ensures a uniformly
+                        structured water flow path.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Pour in continuous concentric circles to preserve an even extraction
+                        bed geometry.
+                    </p>
+                    <p class="Price">38,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/55.webp" class="product-image" alt="Borosilicate Glass Server">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Accessory</span>
+                    <h3 class="product-title">Borosilicate Glass Server</h3>
+                    <p class="product-desc">Heat-resistant clear server glass container crafted seamlessly to sit
+                        underneath major dripper frames.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Swirl the server container softly prior to pouring underlying coffee extractions.
+                    </p>
+                    <p class="Price">28,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/hh.jpg" class="product-image" alt="AeroPress Go Travel Edition">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Travel Brew</span>
+                    <h3 class="product-title">AeroPress Go Travel Pack</h3>
+                    <p class="product-desc">Compact modification packing everything inside an engineering-grade travel
+                        drinking mug unit.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Plunge slow and smoothly; halt directly when the initial air hiss
+                        becomes audible.
+                    </p>
+                    <p class="Price">95,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/scale.jpeg" class="product-image" alt="Digital Coffee Scale">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Accessory</span>
+                    <h3 class="product-title">Barista Digital Scale</h3>
+                    <p class="product-desc">Features a built-in timer and 0.1g precision for tracking precise extraction
+                        ratios over time.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Use the tare function to zero the scale instantly before adding
+                        coffee grounds.
+                    </p>
+                    <p class="Price">45,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/00.webp" class="product-image" alt="Stovetop Espresso Maker">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Stovetop</span>
+                    <h3 class="product-title">Italian Moka Pot</h3>
+                    <p class="product-desc">Brew rich, dense, authentic espresso-style concentrates on your kitchen
+                        stovetop in minutes.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Start with pre-heated water in the base tank to block grain
+                        scorching behaviors.
+                    </p>
+                    <p class="Price">55,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/8.jpeg" class="product-image" alt="Electric Gooseneck Kettle">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Accessory</span>
+                    <h3 class="product-title">Precision Gooseneck Kettle</h3>
+                    <p class="product-desc">Variable temperature regulation options alongside a fine pour
+                        counterbalanced neck design.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Keep target ranges around 93°C to unlock complex single-origin sweet
+                        tones safely.
+                    </p>
+                    <p class="Price">190,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- REMAINDER PREMIUM GEAR MATCHES -->
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/pott.jpg" class="product-image" alt="Chemex Pour-Over Glass Coffeemaker">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Pour Over</span>
+                    <h3 class="product-title">Classic Chemex (6-Cup)</h3>
+                    <p class="product-desc">Made of non-porous borosilicate glass that resists odors and chemical
+                        residues completely.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Utilize proprietary thick filters to isolate sediment for
+                        crystalline body properties.
+                    </p>
+                    <p class="Price">145,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/icee.jpg" class="product-image" alt="Cold Brew Pitcher">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Cold Brew</span>
+                    <h3 class="product-title">Glass Cold Brew Pitcher</h3>
+                    <p class="product-desc">Fine micromesh internal column completely sequesters grinds from
+                        extracted core concentrate drinks.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Let it steep inside your refrigerator for 16-24 hours for maximum
+                        dark chocolate notes.
+                    </p>
+                    <p class="Price">70,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-container">
+                    <img src="images/c.jpeg" class="product-image" alt="Authentic Copper Cezve">
+                </div>
+                <div class="card-info">
+                    <span class="tag">Traditional Method</span>
+                    <h3 class="product-title">Hand-Hammered Cezve</h3>
+                    <p class="product-desc">An artisan-crafted copper pot designed specifically for traditional hot sand
+                        coffee brewing styles.</p>
+                    <p class="usage-tip">
+                        <strong>Usage Tip:</strong> Set over a low, steady flame and withdraw right as the foam crests
+                        toward the top lip.
+                    </p>
+                    <p class="Price">85,000 Ks</p>
+                    <button class="add-btn btn">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+              <!-- Promo Modal (Kept only one clean copy) -->
+    <div class="modal" id="promoModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>Mingalaba! ☕</h2>
+            <p>Sign up with your email to receive 15% discount on your first purchase!</p><br>
+            <div class="email-claim">
+                <input type="email" placeholder="Enter your email" class="email-input">
+            </div><br>
+            <button class="btn-primary" id="claimBtn">Claim Discount</button>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="maybeLater">Maybe Later</button>
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Group 1: Links -->
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                </ul>
+            </div>
+
+            <!-- Group 2: Contact -->
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Phone: +95 9 954 480 810</p>
+                <p>Email: hello@beanboutique.com</p>
+                <p>
+                    <a href="https://maps.google.com/?cid=8774972356191863547" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> 4th Street, 37A 38th St, Mandalay
+                    </a>
+                </p>
+            </div>
+
+            <!-- Group 3: Socials -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright sits alone at the bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+        <!-- Floating Offer Button (Kept only one clean copy) -->
+    <button id="floatingOfferBtn" class="floating-offer-btn">
+        <i class="fas fa-gift"></i> 15% Off
+    </button>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // --- 1. NAVIGATION MENU LOGIC ---
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+        }
+
+        window.addEventListener('pageshow', () => {
+            if (navLinks && menuToggle) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+        // --- 2. ADD TO CART LOGIC ---
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".add-btn").forEach(button => {
+                button.addEventListener("click", (e) => {
+                    const card = e.target.closest(".product-card");
+                    const item = {
+                        title: card.querySelector(".product-title").innerText,
+                        price: parseFloat(card.querySelector(".Price").innerText.replace(/[^0-9.-]+/g, "")),
+                        imgSrc: card.querySelector(".product-image").src,
+                        quantity: 1
+                    };
+
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    cart.push(item);
+                    localStorage.setItem("cart", JSON.stringify(cart));
+                    alert(item.title + " added to cart!");
+                });
+            });
+        });
+
+        // --- 3. LIVE SEARCH & TYPED.JS LOGIC ---
+        window.addEventListener('DOMContentLoaded', () => {
+            // Placeholder animation
+            const typed = new Typed('#brewingSearch', {
+                strings: ['Search Moka Pots...', 'Search Ceramic Drippers...', 'Search French Presses...', 'Search Hand Grinders...'], 
+                typeSpeed: 60,
+                backSpeed: 40,
+                attr: 'placeholder',
+                bindInputFocusEvents: true,
+                loop: true
+            });
+
+            // The Live Search Engine
+            const searchInput = document.getElementById('brewingSearch');
+            const productCards = document.querySelectorAll('.product-card');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const searchFilter = e.target.value.toLowerCase().trim();
+
+                    productCards.forEach(card => {
+                        const productTitle = card.querySelector('h3').textContent.toLowerCase();
+                        
+                        // FIX: Changed '.product-description' to '.product-desc' to match your HTML
+                        const descElement = card.querySelector('.product-desc');
+                        const productDesc = descElement ? descElement.textContent.toLowerCase() : "";
+
+                        // Show card if title or description matches what is typed
+                        if (productTitle.includes(searchFilter) || productDesc.includes(searchFilter)) {
+                            card.style.display = "";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            }
+        });
+
+        // --- 4. FLOATING PROMO MODAL LOGIC ---
+        // FIX: Realigned matching HTML element IDs
+        const promoModal = document.getElementById('promoModal');
+        const floatingOfferBtn = document.getElementById('floatingOfferBtn');
+        const closeModal = document.getElementById('closeModal');
+        const maybeLater = document.getElementById('maybeLater');
+        const claimBtn = document.getElementById('claimBtn');
+
+        function showPromo() {
+            if (promoModal) {
+                promoModal.style.display = 'flex';
+                setTimeout(() => { 
+                    promoModal.style.opacity = '1'; 
+                }, 10);
+            }
+        }
+
+        function hidePromo() {
+            if (promoModal) {
+                promoModal.style.opacity = '0';
+                setTimeout(() => { 
+                    promoModal.style.display = 'none'; 
+                }, 300);
+            }
+        }
+
+        // Open modal when clicking the gift floating button
+        if (floatingOfferBtn) {
+            floatingOfferBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showPromo();
+            });
+        }
+
+        // Close actions
+        if (closeModal) closeModal.addEventListener('click', hidePromo);
+        if (maybeLater) maybeLater.addEventListener('click', hidePromo);
+        
+        if (claimBtn) {
+            claimBtn.addEventListener('click', () => {
+                alert("Discount claimed! Present code BURMABREW at checkout! 🥐");
+                hidePromo();
+            });
+        }
+
+        // Close modal if user clicks gray backdrop area
+        window.addEventListener('click', (event) => {
+            if (event.target === promoModal) {
+                hidePromo();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops & Events - Bean Boutique</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <a href="index.html" class="logo">Bean<span class="logo-site">Boutique</span></a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                    <li><a href="event.html" class="active">Events</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="offers.html">Special Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="content-card">
+            <h1>Upcoming Workshops and Masterclasses</h1>
+            <p class="section-subtitle">Join us to refine your palate and brewing skills alongside our expert roasters.
+            </p>
+
+            <div class="event-cards-grid">
+                <div class="event-card-item">
+                    <div class="event-card-img">
+                        <img src="images/milk.jpg" alt="Latte Art Academy">
+                    </div>
+                    <div class="event-card-info">
+                        <span class="event-date">📅 August 12, 2026</span>
+                        <h2>Latte Art Academy</h2>
+                        <p>Master the perfect pour with our lead barista. Great for beginners!</p>
+                        <p class="event-time">Time: 10:00 AM - 12:00 PM</p>
+                    </div>
+                </div>
+
+
+                <div class="event-card-item">
+                    <div class="event-card-img">
+                        <img src="images/test.jpg" alt="Sensory Cupping Sessions">
+                    </div>
+                    <div class="event-card-info">
+                        <span class="event-date">📅 August 10, 2026</span>
+                        <h2>Sensory Cupping Sessions</h2>
+                        <p>Learn to smell, taste, and score complex origin flavor dynamics alongside our roasting team.
+                        </p>
+                        <p class="event-time">Time: 3:00 AM - 5:00 PM</p>
+
+                    </div>
+                </div>
+
+                <div class="event-card-item">
+                    <div class="event-card-img">
+                        <img src="images/hot.jpg" alt="Home Brewing Masterclass">
+                    </div>
+                    <div class="event-card-info">
+                        <span class="event-date">📅 August 24, 2026</span>
+                        <h2>Home Brewing Masterclass</h2>
+                        <p>Unlock the secrets of pour-over (V60), Aeropress, and French Press brewing ratios at home.
+                        </p>
+                        <p class="event-time">Time: 10:00 AM - 12:00 PM</p>
+
+                    </div>
+                </div>
+
+                <div class="event-card-item">
+                    <div class="event-card-img">
+                        <img src="images/4hand.jpg" alt="Behind-The-Scenes Roastery Tour">
+                    </div>
+                    <div class="event-card-info">
+                        <span class="event-date">📅 September 05, 2026</span>
+                        <h2>Behind-The-Scenes Tour</h2>
+                        <p>Step into our roasting room, explore green bean sourcing, and watch a live batch crack.</p>
+                        <p class="event-time">Time: 7:00 AM - 9:00 PM</p>
+
+                    </div>
+                </div>
+
+                <div class="event-card-item">
+                    <div class="event-card-img">
+                        <img src="images/4sand.jpg" alt="Turkish Sand Coffee Workshop">
+                    </div>
+                    <div class="event-card-info">
+                        <span class="event-date">📅 September 15, 2026</span>
+                        <h2>Traditional Sand Brewing</h2>
+                        <p>Experience the centuries-old method of brewing rich, unfiltered coffee in hot sand using a
+                            traditional copper cezve.</p>
+                        <p class="event-time">Time: 2:00 PM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Secure Your Seat Online</h2>
+            <p class="section-subtitle">Fill out the information below to reserve your entry slot via email.</p>
+
+            <form id="registrationForm" method="post" enctype="text/plain" class="reg-form">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="useremail" required>
+                </div>
+                <div class="form-group">
+                    <label for="workshop">Select Workshop:</label>
+                    <select id="workshop" name="selected_class">
+                        <option value="latte_art">Latte Art Academy</option>
+                        <option value="cupping">Sensory Cupping Session</option>
+                        <option value="brewing">Home Brewing Masterclass</option>
+                        <option value="tour">Behind-The-Scenes Roastery Tour</option>
+                        <option value="pairing">Traditional Sand Brewing</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Submit Registration via Email</button>
+            </form>
+        </div>
+
+
+
+        <div class="location-section">
+            <h2>Find Our Roastery</h2>
+            <p class="section-subtitle">Visit us in person for fresh daily roasts and walk-in tastings.</p>
+
+
+            <iframe class="location-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.231883375851!2d96.1063814163208!3d21.96406174611496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d060919f9ab%3A0x79c6f6ddbcb042fb!2sCozy%20Brew%20Caf%C3%A9!5e0!3m2!1sen!2smm!4v1783248099298!5m2!1sen!2smm"
+                allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+            <div class="location-details">
+                <h3>Visit Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong>64th Street, 37A 38th St, Mandalay</p>
+                <p><i class="fas fa-clock"></i><strong>Hours:</strong> Daily: 9:00 AM – 5:00 PM</p>
+            </div>
+        </div>
+
+        <div class="content-card content-card-split">
+            <div class="about-image-wrapper">
+                <img src="images/group6.jpg" alt="Our Roasting Process" class="responsive-img">
+            </div>
+            <div class="about-text-wrapper">
+                <h2>Roasted Locally with Care</h2>
+                <p>We travel the world to find the best coffee farms. Every single bean is roasted by hand in small
+                    batches right here in our shop to make sure you get the freshest flavor possible in your cup every
+                    morning.</p>
+            </div>
+        </div>
+    </main>
+                <!-- Promo Modal (Kept only one clean copy) -->
+    <div class="modal" id="promoModal">
+        <div class="modal-box">
+            <button class="close-modal-btn" id="closeModal" aria-label="Close modal">&times;</button>
+            <h2>Mingalaba! ☕</h2>
+            <p>Sign up with your email to receive 15% discount on your first purchase!</p><br>
+            <div class="email-claim">
+                <input type="email" placeholder="Enter your email" class="email-input">
+            </div><br>
+            <button class="btn-primary" id="claimBtn">Claim Discount</button>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="maybeLater">Maybe Later</button>
+                <p class="privacy-text">
+                    By signing up, you agree to our <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Group 1: Links -->
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="coffee.html">Coffee Selection</a></li>
+                    <li><a href="brewing.html">Brewing Equipment</a></li>
+                </ul>
+            </div>
+
+            <!-- Group 2: Contact -->
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Phone: +95 9 954 480 810</p>
+                <p>Email: hello@beanboutique.com</p>
+                <p>
+                    <a href="https://maps.google.com/?cid=8774972356191863547" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i> 4th Street, 37A 38th St, Mandalay
+                    </a>
+                </p>
+            </div>
+
+            <!-- Group 3: Socials -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright sits alone at the bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bean Boutique Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+        <!-- Floating Offer Button (Kept only one clean copy) -->
+    <button id="floatingOfferBtn" class="floating-offer-btn">
+        <i class="fas fa-gift"></i> 15% Off
+    </button>
+
+<script>
+        // --- 1. NAVIGATION MENU LOGIC ---
+        // This will now run perfectly because we fixed the crashes above it!
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (menuToggle && navLinks) {
+            // Regular click to open/close the menu
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close the menu when any link inside it is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                });
+            });
+        }
+
+        // Clear the frozen cache when using the browser "Back" button
+        window.addEventListener('pageshow', () => {
+            if (navLinks && menuToggle) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+
+
+        // --- 2. FLOATING PROMO MODAL LOGIC ---
+        // Corrected the IDs to match your actual HTML elements
+        const promoModal = document.getElementById('promoModal');
+        const floatingOfferBtn = document.getElementById('floatingOfferBtn');
+        const closeModal = document.getElementById('closeModal');
+        const maybeLater = document.getElementById('maybeLater');
+        const claimBtn = document.getElementById('claimBtn');
+
+        function showPromo() {
+            if (promoModal) {
+                promoModal.style.display = 'flex';
+                setTimeout(() => { 
+                    promoModal.style.opacity = '1'; 
+                }, 10);
+            }
+        }
+
+        function hidePromo() {
+            if (promoModal) {
+                promoModal.style.opacity = '0';
+                setTimeout(() => { 
+                    promoModal.style.display = 'none'; 
+                }, 300);
+            }
+        }
+
+        // Click floating button to open
+        if (floatingOfferBtn) {
+            floatingOfferBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showPromo();
+            });
+        }
+
+        // Close button handlers
+        if (closeModal) closeModal.addEventListener('click', hidePromo);
+        if (maybeLater) maybeLater.addEventListener('click', hidePromo);
+        
+        if (claimBtn) {
+            claimBtn.addEventListener('click', () => {
+                alert("Discount claimed! Present code BURMABREW at checkout! 🥐");
+                hidePromo();
+            });
+        }
+
+        // Close if clicking outside the white container
+        window.addEventListener('click', (event) => {
+            if (event.target === promoModal) {
+                hidePromo();
+            }
+        });
+
+
+        // --- 3. REGISTRATION FORM LOGIC ---
+        const registrationForm = document.getElementById('registrationForm');
+        if (registrationForm) {
+            registrationForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // This stops the page from reloading/submitting
+                alert("Registration successful! Thank you.");
+            });
+        }
+    </script>
+</body>
+
+</html>
